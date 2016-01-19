@@ -9,3 +9,9 @@ describe('areSpaces', function() {
     expect(areSpaces("any ol message")).to.equal(true);
   });
 });
+
+describe('removeSpaces', function() {
+  it("removes spaces", function() {
+    expect(removeSpaces("any ol message")).to.equal("anyolmessage");
+  });
+});
