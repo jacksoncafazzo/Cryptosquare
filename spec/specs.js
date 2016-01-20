@@ -17,7 +17,13 @@ describe('characterLength', function() {
 });
 
 describe('columnLength', function() {
-  it("has characters", function() {
+  it("square-roots and rounds up to find the column length", function() {
     expect(columnLength(13)).to.equal(4);
   });
 });
+
+// describe('cryptoArray', function() {
+//   it("arranges the removeSpaces string into groups of columnLength", function() {
+//     expect(cryptoArray("rightonjack")).to.equal(['righ', 'tonj', 'ack'])
+//   })
+// })

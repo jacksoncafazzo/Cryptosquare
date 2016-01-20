@@ -20,10 +20,21 @@ var columnLength = function(characterLength) {
   return columnLength
 }
 
-var cryptoArray = function(removeSpaces) {
-  var cryptoArray = removeSpaces.split("");
-  return cryptoArray
+var breakString = function(removeSpaces) {
+  var brokenString = [removeSpaces.slice(0, columnLength), ",", removeSpaces.slice(columnLength, (columnLength + columnLength))].join('');
 }
+
+  // var column1 = removeSpaces.slice(0, 4);
+  // var column2 = removeSpaces.slice(4, 8);
+  // var column3 = removeSpaces.slice(8, 12);
+  // console.log(column1);
+  // console.log(column2);
+  // console.log();
+  console.log(breakString);
+
+breakString(removeSpaces, columnLength).join(',');
+  console.log(breakString(removeSpaces, columnLength).join(','));
+
 
 
 $(document).ready(function() {
