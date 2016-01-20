@@ -1,22 +1,33 @@
 var areSpaces = function(message) {
-  return message.indexOf(' ') >= 0;
+  var areSpaces = message.indexOf(' ') >= 0;
+  return areSpaces
 }
 
+debugger
+
 var removeSpaces = function(message) {
-  return message.replace(/\s+/g, "");
+  var removeSpaces = message.replace(/\s+/g, "");
+  return removeSpaces
 }
 
 var characterLength = function(removeSpaces) {
-  return removeSpaces.length;
+  var characterLength = removeSpaces.length;
+  return characterLength
 }
 
 var columnLength = function(characterLength) {
-  return Math.ceil(Math.sqrt(characterLength));
+  var columnLength = Math.ceil(Math.sqrt(characterLength));
+  return columnLength
+}
+
+var cryptoArray = function(removeSpaces) {
+  var cryptoArray = removeSpaces.split("");
+  return cryptoArray
 }
 
 
-// $(document).ready(function() {
-//
-//
-//     event.preventDefault();
-//   });
+$(document).ready(function() {
+
+
+    event.preventDefault();
+  });
